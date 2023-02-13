@@ -1,0 +1,36 @@
+1766250463:AAH3CYEuEgEgJo8uxvosyLq9_dAjzhae6C0
+Https://api.telegram.org/bot<api_token>/<METHODS>
+Methods:
+getMe
+getUpdates
+setWebhook
+deleteWebhook
+Https://api.telegram.org/bot1766250463:AAH3CYEuEgEgJo8uxvosyLq9_dAjzhae6C0/getUpdates
+
+Https://api.telegram.org/bot1766250463:AAH3CYEuEgEgJo8uxvosyLq9_dAjzhae6C0/deleteWebhook
+
+Https://api.telegram.org/bot1766250463:AAH3CYEuEgEgJo8uxvosyLq9_dAjzhae6C0/setWebhook?url=https://9g1cme995k.execute-api.us-east-1.amazonaws.com/default/Hexplode_bot
+
+{
+	"update_id": 437116268,
+	"message": {
+		"message_id": 19,
+		"from": {
+			"id": 758701283,
+			"is_bot": false,
+			"first_name": "\u6628\u975e",
+			"last_name": "\u97d3",
+			"username": "Hexplode",
+			"language_code": "zh-hans"
+		},
+		"chat": {
+			"id": 758701283,
+			"first_name": "\u6628\u975e",
+			"last_name": "\u97d3",
+			"username": "Hexplode",
+			"type": "private"
+		},
+		"date": 1618137538,
+		"text": "Hi"
+	}
+}

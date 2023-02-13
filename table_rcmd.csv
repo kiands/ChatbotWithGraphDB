@@ -1,0 +1,9 @@
+﻿sentence,meaning,type
+价格不能太高,nh,price
+价格随意,nl,price
+好,good,env
+不太好,normal,env
+韩国菜,kf,style
+中国菜,cf,style
+cp值高,cph,cp
+排队时间短,sqt,qt

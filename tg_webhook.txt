@@ -1,0 +1,1 @@
+https://api.telegram.org/bot1766250463:AAH3CYEuEgEgJo8uxvosyLq9_dAjzhae6C0/setWebhook?url=https://9537-2001-b400-e230-3bf9-b012-e2ca-4a21-c476.ngrok.io/bot

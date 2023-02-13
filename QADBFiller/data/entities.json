@@ -1,0 +1,5 @@
+{"id":1,"name":"煲飽寶小館","desc":"一家老士林都應該知道的中餐館","reput":"頂","foods":["牛肉燴飯"],"accompanies":[],"relatives":["胃太小"]}
+{"id":2,"name":"胃太小","desc":"一家提供200元左右套餐（含有甜點）的中餐館","reput":"不錯","foods":["宮保雞丁"],"accompanies":[],"relatives":["煲飽寶小館"]}
+{"id":3,"name":"富樂士林","desc":"一家甘蔗汁湯底火鍋連鎖店","reput":"不錯","foods":["沙朗牛鍋"],"accompanies":["富樂劍潭"],"relatives":["石二鍋士林"]}
+{"id":4,"name":"富樂劍潭","desc":"一家甘蔗汁湯底火鍋連鎖店","reput":"不錯","foods":["沙朗牛鍋"],"accompanies":["富樂士林"],"relatives":["石二鍋士林"]}
+{"id":5,"name":"石二鍋士林","desc":"一家很夯的火鍋店","reput":"頂","foods":["沙茶牛肉鍋"],"accompanies":[],"relatives":["富樂士林","富樂劍潭"]}
