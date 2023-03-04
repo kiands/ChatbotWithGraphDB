@@ -15,3 +15,43 @@
 #### 4. Dump the data into Neo4J
 #### 5. If we want to generate a robust phrase of something already in the database, we just use neo4j cipher to look for different relations and provide them to ChatGPT. ChatGPT will be able to assemble the separated information into a well organized phrase.
 
+### Q: I will provide you a sentence and a json for reference and I want you to transform the information inside the data into json that in same format.
+### A(From ChatGPT): Sure, I'd be happy to help! Please provide the sentence and the JSON data you would like me to transform.
+### Q: sentence: There is a restaurant called 5Spice(Vietnamese) and it mainly provide Pho dishes. its reputation is good and many people rate it 5/5 stars. Some relative store names are Pho888, Pho66.
+json:{"id":1,"name":"5Spice","desc":"A Vietnamese restaurant provides delicious Pho","reput":"very good","foods":["Pho"],"relatives":["Pho","Pho66"]}
+attention: the "desc" key in json means description, the "reput" key in json means reputation, the value of "foods" key need to be written as string list in pytho format and the value of "relatives" key need to be written as string list in pytho format, too. you need to extract data from the sentence and fill them into the best fit place of json.
+### A(From ChatGPT): Here is the JSON data in the same format as the provided example:
+
+json
+{
+  "id": 1,
+  "name": "5Spice",
+  "desc": "A Vietnamese restaurant provides delicious Pho dishes.",
+  "reput": "good",
+  "foods": ["Pho"],
+  "relatives": ["Pho888", "Pho66"]
+}
+### Q: then help me transform the next sentence into a json. That is: Nusr-Et is a steakhouse and it mainly provide beef steak with fancy services. Some people like its funny services and memes while some people think it is not worthy. There are many relative stores like Keens, Club A.
+### A(From ChatGPT): Sure, here's the JSON data for the given sentence:
+{
+  "id": 1,
+  "name": "Nusr-Et",
+  "desc": "A steakhouse that provides beef steak with fancy services.",
+  "reput": {
+    "good": 60,
+    "average": 20,
+    "bad": 20
+  },
+  "foods": ["Beef Steak"],
+  "relatives": ["Keens", "Club A"]
+}
+### Q: correction: can you give a conclusion of the reputation with a single sentence and revise the json?
+### A: Sure! Here's the revised JSON data with a single sentence summary for the reputation:
+{
+  "id": 1,
+  "name": "Nusr-Et",
+  "desc": "A steakhouse that provides beef steak with fancy services.",
+  "reput": "Mixed reputation with some customers loving the funny services and memes, while others feel it is not worth the price.",
+  "foods": ["Beef Steak"],
+  "relatives": ["Keens", "Club A"]
+}
