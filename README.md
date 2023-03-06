@@ -15,14 +15,17 @@ This folder stores python scripts to interact with Neo4J (generates Neo4J cipher
 This folder contains python scripts to dump data into Neo4J.
 
 ## Advantage of using Neo4J instead of MySQL to store knowledge
-In my opinion, many knowledge contain relations. If we use the concept of object oriented design, the relations between different objects should be an object, too.
+In my opinion, if we want to explain some knowledge, we cannot bypass one thing: organizing and introducing the relation. If we use the concept of object oriented design, the relations between different objects should be an object, too.
+
 For example, If we want to use MySQL to describe the features of one object, the features are stored in a table and different features are stored in different columns. But what if we use Neo4J? Then we can see that the object we want to describe and its features can be stored like this:
 #### object -relation-> feature1.
 ### And even like this:
 #### &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;-relation->
 #### object&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;feature1
 #### &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<-relation-
-In many cases, a specific object has a feature and a feature also influences this object. There exists a two-way description and it has a more complex implementation in traditional RDBMS, however, this is very simple in graph concept. 
+In many cases, a specific object has a feature and a feature also influences this object. There exists a two-way description and it has a more complex implementation in traditional RDBMS, however, this is very simple in graph concept.
+
+#### Another important advantage of using Neo4J instead of traditional RDBMS is: if we use traditional RDBMS, we will need to modify the whole table if we want to add new feature column(s), but Neo4J can allow us to add feature(s) on one specific object to achieve higher efficiency and will not have huge table problem.
 
 ## Example Case
 #### Many users have tried to ask ChatGPT some questions that needs general knowledge to reach enough precision. Unfortunately, ChatGPT is not good at answering these questions. One way to solve this problem is to use its powerful language ability to establish an information pipeline.
