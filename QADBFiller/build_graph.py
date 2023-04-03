@@ -2,7 +2,7 @@ import os
 import json
 from py2neo import Graph,Node
 
-class MedicalGraph:
+class BuildGraph:
     def __init__(self):
         cur_dir = '/'.join(os.path.abspath(__file__).split('/')[:-1])
         self.data_path = os.path.join(cur_dir, 'data/entities.json')
@@ -156,7 +156,7 @@ class MedicalGraph:
 
 
 if __name__ == '__main__':
-    handler = MedicalGraph()
+    handler = BuildGraph()
     print("step1:導入圖譜節點中")
     handler.create_graphnodes()
     print("step2:圖譜邊中")      
