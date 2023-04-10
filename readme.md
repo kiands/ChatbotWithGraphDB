@@ -1,1 +1,0 @@
-ngrok binary executive file is required to be downloaded
